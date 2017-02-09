@@ -56,12 +56,12 @@ describe('Bob', function() {
   xit('shouting with umlauts', function() {
     /* NOTE: \xc4 = Ä
              \xe4 = ä
-             \xdc = Ü 
+             \xdc = Ü
              \xfc = ü
        "\xfcML\xe4\xdcTS" === "üMLäÜTS"
     */
-    
-    var result = bob.hey('\xdcML\xc4\xdcTS!'); 
+
+    var result = bob.hey('\xdcML\xc4\xdcTS!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
